@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>urry Words</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 class="center">
+          <span class="pasa">PASA</span><span class="color-blue">P</span
+          ><span class="alabra">ALABRA</span>
+        </h1>
+      </header>
+      <article class="container">
+        <section class="section__words-revealed">
+          <div class="section__words-revealed-container">
+            <div class="section__words-revealed-theme-title">
+              <span>Theme: Bit Nerds</span
+              ><span class="section__words-revealed-theme" id="theme"></span>
+            </div>
+            <div class="section__words-revealed-list-container">
+              <ul
+                id="list-letters"
+                class="section__words-revealed-list-letters"
+              ></ul>
+              <ul
+                class="section__words-revealed-list-results"
+                id="list-results"
+              ></ul>
+            </div>
+          </div>
+        </section>
+        <section class="section__question">
+          <p class="section__question-title center">Questions</p>
+          <div class="section__question-container">
+            Con la C: <br />
+            Par de arterias que proporcionan sangre al cerebro.
+          </div>
+        </section>
+        <section class="section__answer center">
+          <p class="section__answer-title">Answers</p>
+
+          <form id="form">
+            <input
+              class="section__answer-input center"
+              type="text"
+              id="answer"
+              placeholder="type and answer"
+              value="Carótidas"
+            />
+
+            <div id="buttons" class="section__answer-buttons">
+              <button class="btn btn-guess" type="submit">guess</button>
+              <button class="btn btn-pass" type="submit">pass</button>
+            </div>
+            <!--           <p id="message" class="section__answer-message center">Correct!</p> -->
+          </form>
+        </section>
+        <section class="section__score">
+          <div class="section__score-title">Score</div>
+          <div class="section__score-total score-container">
+            <span>Total</span>
+            <span id="total-score" class="box-score total-score"> 0</span>
+          </div>
+          <div class="section__score-accum score-container">
+            <span>Acc</span>
+            <span id="accum-score" class="box-score accum-score"> 0 </span>
+          </div>
+          <div class="section__score-next score-container">
+            <span class="next-score-text">Next</span
+            ><span id="next-score" class="box-score next-score"> 1 </span>
+          </div>
+        </section>
+        <section class="section__carrusel">
+          <!--   <div class="carrusel"> -->
+          <div class="container-carrusel">
+            <div class="container-position">
+              <div class="box box--0">A</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--1">B</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--2">C</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--3">D</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--4">E</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--5">F</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--6">G</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--7">H</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--8">I</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--9">J</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--10">K</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--11">L</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--12">M</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--13">N</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--14">O</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--15">P</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--16">Q</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--17">R</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--18">S</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--19">T</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--20">U</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--21">V</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--22">W</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--23">X</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--24">Y</div>
+            </div>
+            <div class="container-position">
+              <div class="box box--25">Z</div>
+            </div>
+          </div>
+          <!--  </div> -->
+        </section>
+        <section class="section__message" id="message"></section>
+        <section class="section__timer">
+          <div class="section__timer-container">
+            <button
+              class="section__timer-container-button btn-start"
+              id="start-button"
+            >
+              START
+            </button>
+            <div id="timer" class="section__timer-container-timer hidden"></div>
+          </div>
+        </section>
+        <!--      <section class="section__message" id="message"></section> -->
+      </article>
+      <section class="section__final hidden display-none">
+        <p class="section__final-message">TIME'S UP!!!</p>
+        <p class="section__final-text-score">
+          Your final score:
+          <span id="final-score" class="section__final-score">0</span>
+        </p>
+      </section>
+    </main>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>
